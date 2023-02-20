@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url("./images/bg.jpg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+}
+
+.pain {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 0, 0, 0.1)), url("./images/bg.jpg") no-repeat center /cover;
+    /* background-image: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 255, 255, 0.6), rgba(255, 0, 0, 0.6)); */
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: transparent;
+}
+
+.rain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.potaka {
+    width: 300px;
+    height: 200px;
+    background: green;
+    margin: auto;
+    display: flex;
+}
+
+.chokh {
+    width: 220px;
+    height: 160px;
+    background: orange;
+    margin: auto;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    display: flex;
+}
+
+.gol {
+    width: 80px;
+    height: 80px;
+    background: blue;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sada {
+    width: 160px;
+    height: 160px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.rain::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url("./images/ronaldo-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto 100%;
+}

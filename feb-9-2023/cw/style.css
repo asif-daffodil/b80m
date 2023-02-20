@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    /* font-size: 32px; */
+    /* font-style: italic; */
+    /* font-family: arial; */
+    /* font-weight: bolder; */
+    /* text-transform: uppercase; */
+    /* font-variant: small-caps; */
+    font: italic small-caps bolder 24px auto arial;
+    color: rgba(0, 255, 255, 0.9);
+    text-shadow: 2px 2px 2px rgba(0, 0, 255, 0.8);
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-decoration: underline;
+    line-height: 32px;
+    text-align: center;
+
+    width: 600px;
+    /* 
+    border-width: 5px;
+    border-style: solid;
+    border-color: black; 
+    */
+    border: 5px solid black; 
+    /* margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; */
+    /* margin: 50px auto 50px auto; */
+    /* margin: 50px auto; */
+    margin: 50px auto 20px;
+     /* padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px; */
+    /* padding: 20px 30px 20px 30px; */
+    /* padding: 30px 20px; */
+    /* padding: 50px 10px 20px; */
+    padding: 20px;
+    box-shadow: 6px 6px 12px black, 0 0 12px black inset;
+    border-radius: 8px;
+}
+
+.dhaka{
+    width: 200px;
+    height: 100px;
+    background: cornflowerblue;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.faka {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue;
+    margin-left: 20px;
+    border-radius: 50%;
+}

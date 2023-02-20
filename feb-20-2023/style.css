@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 750px;
+    margin: 20px auto;
+    background: red;
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    width: 150px;
+    position: relative;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    font-family: arial;
+    text-align: center;
+}
+
+.menu li:hover {
+    background: blue;
+}
+
+.snav {
+    list-style: none;
+    position: absolute;
+    background: red;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.menu li:hover .snav {
+    display: block;
+}
+
+.ssnav {
+    list-style: none;
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.snav li:hover .ssnav{
+    display: block;
+}

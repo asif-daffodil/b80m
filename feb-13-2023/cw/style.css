@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    line-height: 200px;
+    background: url("./rp.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    /* opacity: 0.5; */
+}
+
+.main::before {
+    content: "Mr. & Mrs ";
+}
+.main::after {
+    content: " Sarder";
+}
