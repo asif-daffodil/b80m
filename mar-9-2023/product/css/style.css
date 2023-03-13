@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 200px;
+    height: 300px;
+    background: url("../images/phone.jpg") no-repeat center /auto 80%;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.dtls {
+    position: absolute;
+    top: -100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dtls > button {
+    padding: 8px 20px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 20px/50%;
+}
+
+.dtls > button:hover {
+    box-shadow: 6px 6px 6px #000;
+    background: #000;
+    color: #fff;
+}
+
+.product:hover .dtls {
+    top: 0%;
+    left: 0%;
+}

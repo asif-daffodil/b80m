@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full{
+    background-color: white;
+    height: 150px;
+    width: 300px;
+    position: relative;
+    
+    }
+.red{
+    background-color: red;
+    height: 15px;
+    width: 300px;
+    position: absolute;
+    top: 67px;
+}
+.red1{
+    background-color: rgb(230, 27, 27);
+    width: 15px;
+    height: 150px;
+    position: absolute;
+    left: 130px;
+}

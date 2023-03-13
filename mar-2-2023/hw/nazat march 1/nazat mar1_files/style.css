@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.container >.bd{
+    margin: auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.container > .bd >div{
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+.container >.bd >div > img{
+    width: 300px;
+height: 200px;
+object-fit: cover;
+position: relative;
+border-radius: 12px 12px 0px 0px;
+clip-path: polygon(0% 0%, 100% 0%,100% 80%,0% 100%);
+}
+.container > .bd >div >h2{
+    width: 160px;
+    line-height: 160px;
+    text-align: center;
+    border: 1px solid#ccc;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: -30%;
+    background: rgba(255,255,255,0.6)
+    position=relative;
+}
+.container > .bd > div >p{
+    width: 300px;
+    padding: 16px;
+    font-style: italic;
+}
+.container > .bd > div > button{
+    border-width: 0;
+    padding: 12px 28px;
+    cursor: pointer;
+    background: dodgerblue;
+    color:#fff;
+    border-radius: 20px/50%;
+    box-shadow: black, 0 0 10px black inset;
+}
+.container > .bd >div > button:hover{
+    background: darkblue;
+    box-shadow: 5px 5px 5px black, 0 0 10px black inset;
+}
+

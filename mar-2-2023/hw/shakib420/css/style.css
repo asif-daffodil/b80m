@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto:ital,wght@1,500&family=Zeyada&display=swap');
+{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+.veriant{
+  text-align: center;
+
+}
+.veriant>h1 {
+    display: block;
+    width: max-content;
+    padding: 8px 20px;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: auto;
+    background-color:#fff;
+    color: #000;
+    border-radius: 20px/50%;
+ 
+}
+.veriant>h1:hover{
+    background-color: #000;
+color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+}
+
+
+
+.container > .food{
+    margin: auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+.container > .food >div{
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+padding-bottom: 20px;
+padding-left: 0px;
+border-radius: 12px;
+}
+.container > .food >div>img {
+  width: 300px; 
+  height: 500px; 
+  object-fit: cover;
+
+}
+.container > .food >div>h2 {
+width: 150px;
+height: 80px;
+text-align: center;
+margin: auto;
+border: 1px solid #000;
+padding-top: 20%;
+margin-top: -22%;
+background-color:#fff;
+color: #000;
+
+
+
+border-radius: 50%;
+}
+.container > .food >div>h2:hover{
+    background-color: #000;
+    color: #fff;  
+}
+.container > .food >div >p {
+ width: 300px; 
+ height: 100px;  
+ padding: 9px;
+ font-style: italic;
+
+}
+.container > .food >div>button {
+    display: block;
+    width: max-content;
+    padding: 8px 20px;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: auto;
+    background-color:#fff;
+    color: #000;
+    border-radius: 20px/50%;
+    box-shadow: 0 0 0 #000, 0 0 10px #000 inset;
+}
+.container > .food >div>button:hover {
+background-color: #000;
+color: #fff;
+box-shadow: 5px 5px 5px #000, 0 0 10px #000 inset;
+}

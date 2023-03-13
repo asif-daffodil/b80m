@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+   grid-template-areas: "d1 d2 d2" "d1 d3 d4" "d5 d5 d6" " d7 d8 d9 " " d10 d11 d11" "d12 d13 d14" "d12 d15 d15";
+    grid-gap: 30px;
+    padding: 30px;
+ 
+}
+.main>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: #000;
+    
+}
+.d1{
+    grid-area: d1;
+    background: url(../photos/anime.jpg);
+    background-size: cover;
+}
+.d2{
+    grid-area: d2;
+    background: url(../photos/anime\ 10.jfif);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d3{
+    grid-area: d3;
+    background: url(../photos/anime\ 11.jfif);
+    background-size: cover;
+}
+.d4{
+    grid-area: d4;
+    background: url(../photos/anime\ 4.png);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d5{
+    grid-area: d5;
+    background: url(../photos/nature\ 1.avif);
+    background-size: cover;
+    background-position: 0px -70px;
+}
+.d6{
+    grid-area: d6;
+    background: url(../photos/anime\ 2.jfif);
+    background-size: cover;
+    background-position: -40px -0px;
+}
+.d7{
+    grid-area: d7;
+    background: url(../photos/a9.jfif);
+    background-size: cover;
+   
+}
+   
+
+
+.d8{
+    grid-area: d8;
+    background: url(../photos/a8.avif);
+    background-size: cover;
+    
+   
+}
+.d9{
+    grid-area: d9;
+    background: url(../photos/anime\ 10.jfif);
+    background-size: cover;
+    
+    background-position: 0px -40px;
+
+}
+.d10{
+    grid-area: d10;
+    background: url(../photos/anime\ 12.jpg);
+    background-size: cover;
+    
+}
+.d11{
+    grid-area: d11;
+    background: url(../photos/nature\ 6.avif);
+    background-size: cover;
+    background-position: 0px -40px;
+
+}
+.d12{
+    grid-area: d12;
+    background: url(../photos/girl-anime-wallaper-51.jpg);
+    background-size: cover;
+    
+
+}
+.d13{
+    grid-area: d13;
+    background: url(../photos/anime\ 6.png);
+    background-size: cover;
+    background-position: 0px -40px;
+
+    
+}
+.d14{
+    grid-area: d14;
+    background: url(../photos/anime\ 3.jfif);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d15{
+    grid-area: d15;
+    background: url(../photos/nature\ 5.avif);
+    background-size: cover;
+   
+}

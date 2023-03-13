@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pera {
+    width: 100%;
+    display: grid;
+}
+
+.pera > p {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 620px) {
+    .pera {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .pera > p {
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 920px) {
+    .pera {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding: 16px;
+        font-size: 16px;
+    }
+    .pera > p {
+        padding: 12px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .pera {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        font-size: 14px;
+    }
+    .pera > p {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "d1 d1 d2" "d3 d4 d2" "d3 d5 d6" "d3 d5 d7" "d8 d9 d9";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.d1 {
+    grid-area: d1;
+    background: url("../images/bandarban.jpg") no-repeat center /cover;
+}
+.d2 {
+    grid-area: d2;
+    background: url("../images/roman.jpg");
+    background-size: cover;
+    background-position: 0px -30px;
+}
+.d3 {
+    grid-area: d3;
+    background: url("../images/kazi.jpg");
+    background-size: 160% auto;
+    background-position: 0px center;
+}
+.d4 {
+    grid-area: d4;
+    background: url("../images/buriganga.jpg") no-repeat center /cover;
+}
+.d5 {
+    grid-area: d5;
+    background: url("../images/shakib.jpg");
+    background-size: 120% auto;
+    background-position: -50px -140px;
+}
+.d6 {
+    grid-area: d6;
+    background: url("../images/bandarban.jpg") no-repeat center /cover;
+}
+.d7 {
+    grid-area: d7;
+    background: url("../images/kuakata.jpg") no-repeat bottom /cover;
+}
+.d8 {
+    grid-area: d8;
+    background: url("../images/kuakata.jpg") no-repeat bottom /cover;
+}
+.d9 {
+    grid-area: d9;
+    background: url("../images/buriganga.jpg") no-repeat center /cover;
+}

@@ -1,0 +1,51 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Font {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.row {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 1px solid #000;
+    display: flex;
+}
+.col > img {
+    display: block;
+    margin-left: auto;
+    height: 100%;
+}
+.colText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.colText > h2 {
+    text-decoration: underline;
+}
+.colText > p {
+    margin: 20px 0;
+    font-style: italic;
+    width: 300px;
+    font-family: 'Mynerve', cursive;
+}
+.colText > button {
+    display: block;
+    width: max-content;
+    padding: 8px 20px;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.colText > button:hover {
+    background: #6348eb;
+    color: #fff;
+}

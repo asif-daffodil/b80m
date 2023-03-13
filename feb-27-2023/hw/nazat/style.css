@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lobster&display=swap');
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+.shimul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+    
+
+.lifestyle{
+   width: max-content; 
+   height: 80%;
+   margin: auto;
+   border: 1px solid #000;
+   display: flex;
+}
+.Nazat{
+ width: max-content; 
+ padding: 20px;  
+}
+.Nazat > img {
+    display: block;
+    margin-left: auto;
+    height: 100%;
+}
+.Nazat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.Nazat>h2{
+    text-decoration: underline;
+    font-family: 'Gloock', serif;
+}
+.Nazat>p{
+    margin: 20px 0;
+    width: 300px;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}
+.Nazat > button {
+    display: block;
+    width: max-content;
+    padding:8px 20px ;
+    border-width: 0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.Nazat >button:hover {
+    background: #000;
+    color: #fff;
+}
+fonts.googleapis.com

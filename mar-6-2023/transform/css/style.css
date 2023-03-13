@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+}
+
+.roman, .sakib, .nazat, .riaz, .mou {
+    width: 150px;
+    height: 150px;
+    background: cornflowerblue;
+    transition: 0.5s;
+    margin: 20px;
+}
+
+.sakib {
+    background: limegreen;
+}
+
+.nazat{
+    background: hotpink;
+}
+
+.riaz{
+    background: orange;
+}
+
+.mou{
+    background: purple;
+}
+
+.roman:hover {
+    transform: translate(50px, 50px);
+}
+
+.sakib:hover {
+    transform: scale(120%);
+}
+
+.nazat:hover {
+    transform: skew(-15deg, -15deg);
+}
+
+.riaz:hover {
+    transform: rotate(360deg);
+}
+
+.mou:hover {
+    transform: translate(50px, 50px) scale(120%) skew(-15deg, -15deg) rotate(360deg);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bd">
+            <div>
+                <img src="./Document_files/bandarban.jpg" alt="">
+                <h2>Bandarban</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit officia necessitatibus minus, voluptatum recusandae, culpa mollitia magnam maxime nihil, maiores deserunt praesentium? Dolorem, dolore earum? Velit expedita error sit corrupti illo quia autem aperiam eveniet! Veniam doloremque quis, beatae pariatur laboriosam assumenda inventore, aut porro earum iure omnis excepturi?
+                </p>
+                <button>Read More</button>
+            </div>
+          
+                <div><img src="./Document_files/cox.jpg" alt="">
+                    <h2>cox'sbazar</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, qui expedita! Nobis esse assumenda enim, aliquid aliquam consequuntur aperiam pariatur recusandae soluta sunt perspiciatis aspernatur deleniti expedita necessitatibus earum exercitationem cumque voluptatum mollitia placeat et quidem reiciendis tenetur. Atque eos dolor veritatis reiciendis quasi at recusandae esse quidem impedit tenetur!</p>
+                    <button>Read More</button></div>
+                    <div><img src="./Document_files/shimul-bagan.JPG" alt="">
+                        <h2>Sunamgonj</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut magni laborum earum esse, similique praesentium soluta debitis error maiores obcaecati rem inventore, aspernatur officia quod voluptas sunt, ex corporis enim id iste. Quae molestias et perspiciatis possimus debitis. Animi, tempora praesentium. Necessitatibus quos, impedit provident porro aperiam recusandae incidunt!.</p>
+                        <button>Read More</button></div>
+            
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

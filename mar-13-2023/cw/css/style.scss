@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgBlue : hotpink;
+
+@mixin sultanDine($w:50%, $h:50%) {
+    width: $w;
+    height: $h;
+    margin: auto;
+    display: flex;
+}
+
+.prithibi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: $bgBlue;
+
+    >.asia {
+        @include sultanDine(80%, 80%);
+        background-color: limegreen;
+
+        >.bangladesh {
+            @include sultanDine(60%, 70%);
+            background-color: $bgBlue;
+
+            >.dhaka {
+                @include sultanDine(70%, 70%);
+                background-color: limegreen;
+
+                >.dhanmondi {
+                    @include sultanDine();
+                    background-color: $bgBlue;
+                }
+            }
+        }
+    }
+}
+
+.kacchi {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.vai{
+    @extend .kacchi;
+    height: 200px;
+}

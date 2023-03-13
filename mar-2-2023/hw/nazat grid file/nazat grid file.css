@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1000px;
+    height:1000px;
+    display: grid;
+    grid-template-areas: "d1 d2 d2" "d1 d3 d4" "d5 d5 d6" "d7 d8 d9" "d10 d11 d11" "d12 d13 d14" " d12 d15 d15";
+    grid-gap: 30px;
+    padding: 30px;
+}
+.main>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: aqua;
+    color: black;
+}
+.d1{
+    grid-area: d1;
+    background: url(../1\ bird.jpg);
+    background-size: cover;
+}
+.d2{
+    grid-area: d2;
+    background: url(../2\ bird.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}.d3{
+    grid-area: d3;
+    background: url(../3\ bird.jpg );
+    background-size: cover;
+
+}
+.d4{
+    grid-area: d4;
+    background: url(../4\ bird.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}.d5{
+    grid-area: d5; 
+    background: url(../5.jpg);
+    background-size: cover;
+    background-position: 0px -70px;
+
+}.d6{
+    grid-area: d6;
+    background: url(../6.jpg);
+    background-size: cover;
+    background-position: -40px -0px;
+}
+.d7{
+    grid-area: d7;
+    background: url(../7.jpg);
+    background-size: cover;
+   
+}
+.d8{
+    grid-area: d8;
+    background: url(../8.jpg);
+    background-size: cover;
+   
+}
+.d9{
+    grid-area: d9;
+    background: url(../9.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d10{
+    grid-area: d10;
+    background: url(../10.jpg);
+    background-size: cover;
+  
+}
+.d11{
+    grid-area: d11;
+    background: url(../11.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d12{
+    grid-area: d12;
+    background: url(../12.jpg);
+    background-size: cover;
+    
+}
+.d13{
+    grid-area: d13;
+    background: url(../13.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d14{
+    grid-area: d14;
+    background: url(../14.jpg);
+    background-size: cover;
+    background-position: 0px -40px;
+}
+.d15{
+    grid-area: d15;
+    background: url(../15.jpg);
+    background-size: cover;
+}
+
+
+

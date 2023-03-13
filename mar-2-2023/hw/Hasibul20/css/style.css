@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh
+    display: flex;
+}
+
+.main > .shimanto {
+    margin: auto;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}  
+
+.main > .shimanto > div {
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 12px;
+}
+
+.main > .shimanto > div > img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 12px 12px 0px 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+}
+
+.main > .shimanto > div > h2 {
+    width: 160px;
+    line-height: 160px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: -30%;
+    background: rgba(255,255,255,0.6);
+    position: relative;
+}
+
+.main > .shimanto > div > p{
+    width: 300px;
+    padding: 16px;
+    font-style: italic;
+}
+
+.main > .shimanto > div > button {
+    border-width: 0;
+    padding: 12px 28px;
+    cursor: pointer;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 20px/50%;
+    box-shadow: 0 0 0 #000, 0 0 10px #000 inset;
+}
+
+.main > .shimanto > div > button:hover{
+    background: orange;
+    color: white;
+    box-shadow: 5px 5px 5px #000, 0 0 10px #000 inset;
+}
+
+.hai {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"d1 d1 d2" "d3 d4 d2" "d3 d5 d6" "d3 d5 d7" "d8 d9 d9";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.hai >div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(202, 25, 149, 0.699);
+    color: #fff;
+}
+
+.d1 {
+    grid-area: d1;
+}
+.d2 {
+    grid-area: d2;
+}
+.d3 {
+    grid-area: d3;
+}
+.d4 {
+    grid-area: d4;
+}
+.d5 {
+    grid-area: d5;
+}
+.d6 {
+    grid-area: d6;
+}
+.d7 {
+    grid-area: d7;
+}
+.d8 {
+    grid-area: d8;
+}
+.d9 {
+    grid-area: d9;
+}
