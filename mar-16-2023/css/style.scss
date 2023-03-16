@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url("../images/dancing.gif") no-repeat bottom left;
+    >.snav{
+        margin: auto;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        >li{
+            width: 50px;
+            border: 1px solid #000;
+            margin: 0 4px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+            box-shadow: 0 0 10px #000 inset;
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: 0.5s;
+                z-index: -100;
+            }
+            &:first-child{
+                &::before{
+                    background: #1773EA;
+                }
+            }
+            &:nth-child(2){
+                &::before{
+                    background: #1C96E8;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    background: #0C61BF;
+                }
+            }
+            &:nth-child(4){
+                &::before{
+                    background: #f00;
+                }
+            }
+            &:last-child{
+                &::before{
+                    background: #DF0022;
+                }
+            }
+            &:hover{
+                &::before{
+                    top: 0%;
+                }
+                >a{
+                   color: #fff; 
+                }
+            }
+            >a{
+                line-height: 50px;
+                color: #000;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
+
+.pain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    >.vdo{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    >.text{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: arial;
+        background: rgba(255,255,255,0.6);
+        animation: asif 2s infinite linear;
+    }
+}
+
+@keyframes asif {
+    0%{text-shadow: 0 0 2px blue;font-size: 48px;letter-spacing: 3px;color: #000;}
+    50%{text-shadow: 0 0 8px blue;font-size: 96px;letter-spacing: 9px;color: #fff;}
+    100%{text-shadow: 0 0 2px blue;font-size: 48px;letter-spacing: 3px;color: #000;}
+}
+
+.rain{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/wall.jpg");
+    display: flex;
+    >.coxbazar{
+        background: url("../images/coxbazar.gif") no-repeat bottom center /cover;
+        width: 700px;
+        height: 300px;
+        margin: auto;
+        border: 10px solid;
+        border-image: url("../images/wood.jpg") 30 round;
+        position: relative;
+        cursor: pointer;
+        &::before, &::after{
+            content: "";
+            width: calc(50% - 20px);
+            height: calc(100% - 20px);
+            transition: 0.5s;
+            border: 10px solid;
+            border-image: url("../images/wood.jpg") 30 round;
+            position: absolute;
+            top: 0;
+            background: rgba(0,0,0,0.6);
+        }
+        &::before{
+            left: 0;
+        }
+        &::after{
+            right: 0;
+        }
+        &:hover{
+            &::before{
+                left: -45%;
+            }
+            &::after{
+                right: -45%;
+            }
+        }
+    }
+}
