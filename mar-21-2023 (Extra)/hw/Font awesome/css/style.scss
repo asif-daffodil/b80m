@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    >ul {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        text-align: center;
+
+        >li {
+            width: 50px;
+            border: 1px solid #000;
+            margin: 0 4px;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+            box-shadow: 0 0 10px #000 inset;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: 0.5s;
+                z-index: -100;
+            }
+
+            &:first-child {
+                &::before {
+                    background: #1773EA;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background: #f00;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background: #0C61BF;
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    background: #DF0027;
+                }
+            }
+
+            &:last-child {
+                &::before {
+                    background: #1C96EB;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    top: 0%;
+                }
+
+                >a {
+                    color: #fff;
+                }
+            }
+
+            >a {
+                line-height: 50px;
+                color: #000;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
+
+.rain {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/wall.png");
+    display: flex;
+
+    >.cox {
+        background: url("../img/sea.gif") no-repeat bottom center /cover;
+        width: 700px;
+        height: 300px;
+        margin: auto;
+        border: 10px solid;
+        border-image: url("../img/wood.jpg") 30 round;
+        position: relative;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            width: calc(50% - 20px);
+            height: calc(100% - 20px);
+            transition: 0.5s;
+            border: 10px solid;
+            border-image: url("../img/wood.jpg") 30 round;
+            position: absolute;
+            top: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+
+        &:hover {
+            &::before {
+                left: -45%;
+
+            }
+
+            &::after {
+                right: -45%;
+            }
+        }
+    }
+}
