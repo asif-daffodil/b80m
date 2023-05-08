@@ -10,72 +10,74 @@
     <link rel="stylesheet" href="./css/style.min.css">
 
     <style>
-        .carousel-caption{
-            background: rgba(0,0,0,0.5);
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
         }
-        .carousel-indicators [data-bs-target]{
+
+        .carousel-indicators [data-bs-target] {
             width: 20px;
             height: 20px;
             border-radius: 50%;
         }
-        .navbg{
-            background: rgba(0,0,0,0.5);
+
+        .navbg {
+            background: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 
 <body>
     <div class="container-xxl">
-            <!-- nav abr start -->
-            <div class="row p-0 position-fixed top-0 left-0 z-3 w-100 navbg">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Ashraful</a>
-                                </li>
-                            </ul>
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control border border-warning" placeholder="Search..."
-                                        aria-label="Username" aria-describedby="basic-addon1">
-                                    <button class="input-group-text bg-warning border border-warning" id="basic-addon1">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+        <!-- nav abr start -->
+        <div class="row p-0 position-fixed top-0 left-0 z-3 w-100 navbg">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ashraful</a>
+                            </li>
+                        </ul>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control border border-warning" placeholder="Search..."
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                                <button class="input-group-text bg-warning border border-warning" id="basic-addon1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                </nav>
-            </div>
-            <!-- nav abr end -->
+                </div>
+            </nav>
+        </div>
+        <!-- nav abr end -->
         <div class="row">
             <!-- slider-start -->
             <div id="carouselExampleCaptions" class="carousel slide col-12 p-0" data-bs-ride="carousel">
@@ -93,35 +95,40 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="./images/slide1.png" class="d-block w-100 min-vh-100" alt="..." style="object-fit: cover;">
+                        <img src="./images/slide1.png" class="d-block w-100 min-vh-100" alt="..."
+                            style="object-fit: cover;">
                         <div class="carousel-caption">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/slide2.jpg" class="d-block w-100 min-vh-100" alt="..." style="object-fit: cover;">
+                        <img src="./images/slide2.jpg" class="d-block w-100 min-vh-100" alt="..."
+                            style="object-fit: cover;">
                         <div class="carousel-caption">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./images/slide3.jpg" class="d-block w-100 min-vh-100" alt="..." style="object-fit: cover;">
+                        <img src="./images/slide3.jpg" class="d-block w-100 min-vh-100" alt="..."
+                            style="object-fit: cover;">
                         <div class="carousel-caption">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
-                        <img src="./images/slide4.jpg" class="d-block w-100 min-vh-100" alt="..." style="object-fit: cover;">
+                        <img src="./images/slide4.jpg" class="d-block w-100 min-vh-100" alt="..."
+                            style="object-fit: cover;">
                         <div class="carousel-caption">
                             <h5>Fourth slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./images/slide5.jpg" class="d-block w-100 min-vh-100" alt="..." style="object-fit: cover;">
+                        <img src="./images/slide5.jpg" class="d-block w-100 min-vh-100" alt="..."
+                            style="object-fit: cover;">
                         <div class="carousel-caption">
                             <h5>Fifth slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
@@ -161,11 +168,13 @@
                                             Arif Raihan
                                         </div>
                                         <div class="text-muted fs-6 mb-3"><small>Apr 3</small></div>
-                                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
                                         <a href="#">Continue reading</a>
                                     </div>
                                     <div class="col-4">
-                                        <img src="./images/arif.jpg" alt="" class="img-fluid h-100" style="object-fit: cover; transform: scaleX(-1);">
+                                        <img src="./images/arif.jpg" alt="" class="img-fluid h-100"
+                                            style="object-fit: cover; transform: scaleX(-1);">
                                     </div>
                                 </div>
                             </div>
@@ -177,14 +186,16 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="./images/nazat.jpg" alt="" class="img-fluid h-100" style="object-fit: cover; object-position: left;">
+                                        <img src="./images/nazat.jpg" alt="" class="img-fluid h-100"
+                                            style="object-fit: cover; object-position: left;">
                                     </div>
                                     <div class="col-8 text-end">
                                         <div class="fs-1 text-secondary card-title mb-0 p-0">
                                             Noor Nazat
                                         </div>
                                         <div class="text-muted fs-6 mb-3"><small>Apr 3</small></div>
-                                        <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
                                         <a href="#">Continue reading</a>
                                     </div>
                                 </div>
@@ -206,13 +217,16 @@
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="./images/khaleq.jpg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
+                                <img src="./images/khaleq.jpg" alt="" style="width: 200px; height: 200px;"
+                                    class="rounded-circle">
                                 <div class="fs-4">
                                     Khalequl Islam
                                 </div>
                                 <p>
                                     <small>
-                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id
+                                        dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                                        consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                                     </small>
                                 </p>
                                 <button class="btn btn-primary btn-sm">Read More</button>
@@ -222,32 +236,40 @@
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="./images/sakib.jpg" alt="" style="width: 200px; height: 200px; object-fit: cover;" class="rounded-circle">
+                                <img src="./images/sakib.jpg" alt=""
+                                    style="width: 200px; height: 200px; object-fit: cover;" class="rounded-circle">
                                 <div class="fs-4">
                                     Shakib Hasan
                                 </div>
                                 <p>
                                     <small>
-                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id
+                                        dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                                        consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                                     </small>
                                 </p>
-                                <button class="btn btn-primary btn-sm">Read More</button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#sakibba">Read More</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="./images/roman.jpg" alt="" style="width: 200px; height: 200px;" class="rounded-circle">
+                                <img src="./images/roman.jpg" alt="" style="width: 200px; height: 200px;"
+                                    class="rounded-circle">
                                 <div class="fs-4">
                                     Roman Sarder
                                 </div>
                                 <p>
                                     <small>
-                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+                                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id
+                                        dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac
+                                        consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                                     </small>
                                 </p>
-                                <button class="btn btn-primary btn-sm">Read More</button>
+                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -255,7 +277,175 @@
             </div>
         </div>
         <!-- our team end -->
+
+        <!-- contact info start -->
+        <div class="row min-vh-100 d-flex align-items-center">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 display-6 text-center py-4 text-primary">
+                        Contact Us
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Branch Contact</h2>
+                        <table class="table table-light table-striped table-hover">
+                            <tr>
+                                <th>S.N</th>
+                                <th>Area</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Dhaka</td>
+                                <td>01712121212</td>
+                                <td>dhaka@office.com</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Bogura</td>
+                                <td>01712121212</td>
+                                <td>bogura@office.com</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Barishal</td>
+                                <td>01712121212</td>
+                                <td>barishal@office.com</td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>Gazipur</td>
+                                <td>01712121212</td>
+                                <td>gazipur@office.com</td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>Joypurhat</td>
+                                <td>01712121212</td>
+                                <td>joypurhat@office.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Contact From</h2>
+                        <form action="">
+                            <div class="mb-3">
+                                <input type="text" placeholder="Your name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check form-check-inline">
+                                    <label for="" class="form-check-label">Gender :</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="gndr">
+                                    <label for="" class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="gndr">
+                                    <label for="" class="form-check-label">Female</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">--Select Country--</option>
+                                    <option value="">Bangladesh</option>
+                                    <option value="">India</option>
+                                    <option value="">Pakistan</option>
+                                    <option value="">Rasia</option>
+                                    <option value="">USA</option>
+                                    <option value="">Others</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="text" class="form-control border-0 border-bottom" placeholder="Your email">
+                                <label for="">Your email</label>
+                            </div>
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact info end -->
+
+        <!-- skills part start -->
+        <div class="row min-vh-100 d-flex">
+            <div class="col-md-6 m-auto border rounded shadow p-3">
+                <h2 class="text-center mb-3">Skills</h2>
+                HTML :
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 95%;">
+                        95%</div>
+                </div>
+                CSS :
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 85%;">85%
+                    </div>
+                </div>
+                Bootstrap :
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%;">75%</div>
+                </div>
+                JavaScirpt :
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 40%;">
+                        40%</div>
+                </div>
+                React :
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 50%;">
+                        50%</div>
+                </div>
+            </div>
+        </div>
+        <!-- skills part end -->
     </div>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Roman Sarder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quam aperiam laboriosam
+                    facilis provident asperiores quis doloribus velit perferendis ducimus nesciunt rerum minima, sint
+                    consectetur! Delectus, saepe natus earum, voluptas ut necessitatibus repellat suscipit, magni
+                    exercitationem enim obcaecati? Tenetur debitis perferendis omnis. Voluptate, provident? Cum dolore
+                    voluptatibus officia deserunt repellendus.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sakibba" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Shakib Hasan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quam aperiam laboriosam
+                    facilis provident asperiores quis doloribus velit perferendis ducimus nesciunt rerum minima, sint
+                    consectetur! Delectus, saepe natus earum, voluptas ut necessitatibus repellat suscipit, magni
+                    exercitationem enim obcaecati? Tenetur debitis perferendis omnis. Voluptate, provident? Cum dolore
+                    voluptatibus officia deserunt repellendus.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
 </body>
 
