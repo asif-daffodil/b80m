@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="myForm">
+        <input type="text" placeholder="First Name" id="fname">
+        <input type="text" placeholder="Last Name" id="lname">
+        <button type="submit">Show Name</button>
+    </form>
+
+    <div id="roamn"></div>
+
+    <div id="text">Asraf ekhono khaoyaynai</div>
+    <button id="ashraf">Ashraful</button>
+    <script>
+        const myForm = document.getElementById("myForm");
+        const roamn = document.getElementById("roamn");
+
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const yname = document.getElementById("fname");
+            const lname = document.getElementById("lname");
+            roamn.innerHTML = "Your Full Name is " + fname.value + " " + lname.value;
+        })
+    </script>
+    <script src="./es.js"></script>
+</body>
+
+</html>
