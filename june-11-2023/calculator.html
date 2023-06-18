@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Calculator</title>
+    <style>
+        .calculator {
+            width: 240px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .calculator input[type="text"] {
+            text-align: right;
+            font-size: 24px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .calculator .row {
+            margin-bottom: 10px;
+        }
+
+        .calculator button {
+            font-size: 24px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Clock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Countdown</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./calculator.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 py-5">
+        <div class="calculator">
+            <input type="text" class="form-control mb-3" id="result" readonly>
+            <div class="row">
+                <button class="col btn btn-secondary" onclick="addToResult(7)">7</button>
+                <button class="col btn btn-secondary" onclick="addToResult(8)">8</button>
+                <button class="col btn btn-secondary" onclick="addToResult(9)">9</button>
+                <button class="col btn btn-warning" onclick="addToResult('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary" onclick="addToResult(4)">4</button>
+                <button class="col btn btn-secondary" onclick="addToResult(5)">5</button>
+                <button class="col btn btn-secondary" onclick="addToResult(6)">6</button>
+                <button class="col btn btn-warning" onclick="addToResult('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary" onclick="addToResult(1)">1</button>
+                <button class="col btn btn-secondary" onclick="addToResult(2)">2</button>
+                <button class="col btn btn-secondary" onclick="addToResult(3)">3</button>
+                <button class="col btn btn-warning" onclick="addToResult('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-secondary" onclick="addToResult(0)">0</button>
+                <button class="col btn btn-success" onclick="calculateResult()">=</button>
+                <button class="col btn btn-warning" onclick="addToResult('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="col btn btn-danger" onclick="clearResult()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/calculator.js"></script>
+</body>
+
+</html>

@@ -26,11 +26,13 @@
                         <input type="text" placeholder="Your Email" id="yemail"
                             class="form-control shadow-none border-0 border-bottom rounded-0">
                         <label for="">Your Email</label>
+                        <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-3 form-floating">
                         <input type="password" placeholder="Your Password" id="ypass"
                             class="form-control shadow-none border-0 border-bottom rounded-0">
                         <label for="">Your Password</label>
+                        <div class="invalid-feedback"></div>
                     </div>
                     <div class="mb-4">
                         <div for="">
@@ -38,13 +40,17 @@
                             <label for="showPass" class="form-check-lebel">Show Password</label>
                         </div>
                     </div>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text" id="num"></span>
+                        <input type="number" id="ynum" class="form-control">
+                        <div class="invalid-feedback"></div>
+                    </div>
                     <button class="btn btn-primary px-4 rounded-pill btn-outline-danger text-white border-0">Sign
                         Up</button>
                 </form>
             </div>
         </div>
     </div>
-
     <script src="./js/script.js"></script>
 </body>
 
