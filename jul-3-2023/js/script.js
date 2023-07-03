@@ -6,6 +6,16 @@ const slideArray = Array.from(slider.children);
 const totalSlide = slideArray.length;
 const topElement = document.querySelectorAll(".top")[0];
 
+for (let i = 0; i < slideArray.length; i++) {
+    const li = document.createElement("li");
+    topElement.appendChild(li);
+    li.addEventListener("click", () => {
+        x = i;
+        changeClass();
+    });
+}
+topElement.children[0].classList.add("activeDot");
+
 let x = 0;
 const increaseX = () => {
     x = (x + 1) % totalSlide;
@@ -33,30 +43,20 @@ main.addEventListener("mouseout", ()=>{
     runSlider =  setInterval(() => {increaseX();changeClass();}, 3000);
 })
 
-left.addEventListener("click", ()=>{
-    if(x <= 1){
-        x = totalSlide;
-    }else{
-        --x;
+left.addEventListener("click", () => {
+    if (x === 0) {
+        x = totalSlide - 1;
+    } else {
+        x--;
     }
     changeClass();
-})
+});
 
-right.addEventListener("click", ()=>{
-    if(x >= totalSlide){
-        x = 1;
-    }else{
-        ++x;
+right.addEventListener("click", () => {
+    if (x === totalSlide - 1) {
+        x = 0;
+    } else {
+        x++;
     }
     changeClass();
-})
-
-
-for (let i = 0; i < slideArray.length; i++) {
-    const li = document.createElement("li");
-    topElement.appendChild(li);
-    li.addEventListener("click", () => {
-        x = i;
-        changeClass();
-    });
-}
+});
