@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noman-vai {
+    background: #000;
+    color: #fff;
+}
+
+.roman {
+    background: #f00;
+    color: #fff;
+}
+
+.sakib {
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-shadow: 0 0 9px #ccc, 0 0 6px #000 inset;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px #00f;
+    width: max-content;
+    margin: 20px;
+}
+
+.btn {
+    margin: 20px;
+    border-width: 0;
+    margin-top: 0;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: dodgerblue;
+    color: #fff;
+    width: 90px;
+}
+
+.btn:hover {
+    background: limegreen;
+    color: #fff;
+    font-weight: bolder;
+}
