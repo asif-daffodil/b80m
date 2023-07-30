@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="sk">
+        <div id="sakib">
+            Sakib is is class now
+        </div>
+        <button id="skhbtn">Hide</button>
+        <button id="sksbtn">Show</button>
+        <button id="sktbtn">Toggle</button>
+    </div>
+
+    <div class="faq">
+        <div class="question">What is your name?</div>
+        <div class="answer">My Name is Asif</div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $("#skhbtn").click(function () {
+            $("#sakib").hide(500);
+        })
+        $("#sksbtn").click(function () {
+            $("#sakib").show(500);
+        })
+        $("#sktbtn").click(function () {
+            $("#sakib").toggle(500);
+        })
+        $(".question").click(function () {
+            $(".answer").slideToggle(500)
+        })
+    </script>
+</body>
+
+</html>

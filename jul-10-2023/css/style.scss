@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    >h2{
+        text-align: center;
+        font-size: 33px;
+    }
+}
+
+.textroll{
+    a {
+        text-decoration: none;
+            color: #333;
+        }
+    a:hover {
+            color: #666;
+        }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sk {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: max-content;
+}
+
+.faq {
+    width: max-content;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    .question{
+        font-size: 20px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .answer{
+        font-size: 14px;
+        margin-top: 9px;
+        display: none;
+    }
+}

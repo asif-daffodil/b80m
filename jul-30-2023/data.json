@@ -1,0 +1,62 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "position": "Software Engineer",
+      "department": "Engineering"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 25,
+      "position": "UI/UX Designer",
+      "department": "Design"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "age": 35,
+      "position": "Project Manager",
+      "department": "Management"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "price": 1000,
+      "category": "Electronics"
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "price": 800,
+      "category": "Electronics"
+    },
+    {
+      "id": 103,
+      "name": "Desk Chair",
+      "price": 150,
+      "category": "Furniture"
+    }
+  ],
+  "countries": [
+    {
+      "name": "United States",
+      "population": 331449281,
+      "capital": "Washington, D.C."
+    },
+    {
+      "name": "China",
+      "population": 1444216107,
+      "capital": "Beijing"
+    },
+    {
+      "name": "India",
+      "population": 1393409038,
+      "capital": "New Delhi"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery-cycleText by eshengsky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="dist/css/animate.css"/>
+    <link rel="stylesheet" href="dist/css/index.css"/>
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">jQuery-cycleText</h1>
+
+    <h2 class="project-tagline">Cycle display text.<br>循环交替显示文本。
+    </h2>
+    <a href="https://github.com/eshengsky/jQuery-cycleText" class="btn">View on GitHub</a>
+    <a href="https://github.com/eshengsky/jQuery-cycleText/zipball/master" class="btn">Download .zip</a>
+    <a href="https://github.com/eshengsky/jQuery-cycleText/tarball/master" class="btn">Download .tar.gz</a>
+</section>
+
+<section class="main-content container">
+    <h2>功能 features</h2>
+    <ul>
+        <li>将以自定义分隔符分隔的各文本循环交替显示。Cycle display the text which is separated by separator.
+        </li>
+        <li>循环的动画效果基于<a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>。The cycle animation
+            based on <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>.
+        </li>
+    </ul>
+    <h2>示例 demo</h2>
+
+    <div class="row firstRow">
+        <div class="col-md-6">
+            <h4>文本 text</h4>
+
+            <h3>I am a <span id="span1">Front-end developer|ASP.NET engineer</span>.</h3>
+
+            <div class="m-t-20">
+                <button class="btn btn-primary" id="btnLoad">加载 load</button>
+                <button class="btn btn-primary" id="btnPause">暂停 pause</button>
+                <button class="btn btn-primary" id="btnResume">恢复 resume</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>代码 code</h4>
+            <pre class="pre-scrollable">
+//init
+$('#span1').cycleText();
+
+//pause
+$('#span1').cycleText('pause');
+
+//resume
+$('#span1').cycleText('resume');
+            </pre>
+        </div>
+    </div>
+    <hr/>
+    <h2>使用 usage</h2>
+
+    <p>
+        首先在页面上引用css文件和js文件，css文件一般在&lt;head&gt;中添加，js文件一般在&lt;/body&gt;之前添加。注意1.需要引入animate.css,
+        2.要先引用jquery，再引用插件js。<br>
+        Firstly reference the css and js file of this plugin, the best location of the css reference is in &lt;head&gt;,
+        and the js is before &lt;/body&gt;, make sure required animate.css and the plugin js should follows jQuery.
+    </p>
+    <pre>
+&lt;head&gt;
+    ...
+    &lt;!--the css for animation--&gt;
+    &lt;link rel="stylesheet" href="css/animate.css"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+...
+&lt;!--the js for jquery--&gt;
+&lt;script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js">&lt;/script&gt;
+&lt;!--the js for this plugin--&gt;
+&lt;script src="js/jquery.cycleText.js">&lt;/script&gt;
+&lt;/body&gt;
+    </pre>
+    <p>
+        然后在文本元素上执行初始化<br>
+        then initialize cycleText on text element
+    </p>
+    <pre>
+$('#span1').cycleText(options);
+    </pre>
+    <h2>参数 options</h2>
+    <table class="table table-bordered table-striped table-hover">
+        <tr>
+            <th>名称 name</th>
+            <th>类型 type</th>
+            <th>默认值 default</th>
+            <th>说明 desc</th>
+        </tr>
+        <tr>
+            <td>separator</td>
+            <td>String</td>
+            <td>'|'</td>
+            <td>
+                文本之间的分隔符。<br>
+                The separator of text.
+            </td>
+        </tr>
+        <tr>
+            <td>animation</td>
+            <td>String</td>
+            <td>'flipInX'</td>
+            <td>
+                循环的动画效果名称，详见<a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>页面。<br>
+                The name of cycle animation, please view <a href="http://daneden.github.io/animate.css/"
+                                                            target="_blank">Animate.css</a> page.
+            </td>
+        </tr>
+        <tr>
+            <td>interval</td>
+            <td>Number</td>
+            <td>2000</td>
+            <td>
+                循环的间隔时间，单位毫秒。<br>
+                The cycle interval time, in milliseconds.
+            </td>
+        </tr>
+    </table>
+    <h2>方法 method</h2>
+
+    <h4>
+        <code>.cycleText('pause');</code>
+    </h4>
+
+    <p>
+        暂停。<br>
+        pause.
+    </p>
+    <pre>
+$("#span1").cycleText('pause');
+    </pre>
+    <h4>
+        <code>.cycleText('resume');</code>
+    </h4>
+
+    <p>
+        恢复。<br>
+        resume.
+    </p>
+    <pre>
+$("#span1").cycleText('resume');
+    </pre>
+    <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/eshengsky/jQuery-cycleText">jQuery-cycleText</a> is maintained by <a
+                href="https://github.com/eshengsky">eshengsky</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
+</section>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+<script src="dist/js/jquery.cycleText.min.js"></script>
+<script>
+    $('#btnLoad').click(function () {
+        $('#span1').cycleText();
+    });
+
+    $('#btnResume').click(function () {
+        $('#span1').cycleText('resume');
+    });
+
+    $('#btnPause').click(function () {
+        $('#span1').cycleText('pause');
+    });
+</script>
+</body>
+</html>

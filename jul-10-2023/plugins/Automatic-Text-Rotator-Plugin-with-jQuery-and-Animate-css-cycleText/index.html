@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery cycleText Plugin Demo</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+<style>
+body { font-family:'roboto'; background-color:#fcfcfc; }
+.container { margin:150px auto; max-width:640px;}
+h3 { color:#EF476F;}
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/rotator/Automatic-Text-Rotator-Plugin-with-jQuery-and-Animate-css-cycleText.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery cycleText Plugin Demo</h1>
+<h3>I am a <span id="demo">Front-end Developer|Web Designer|PHP/Java Engineer</span>.</h3><br>
+<br>
+<button class="btn btn-primary" id="btnLoad">Active</button>
+                <button class="btn btn-primary" id="btnPause">Pause</button>
+                <button class="btn btn-primary" id="btnResume">Resume</button>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="src/js/jquery.cycleText.js"></script>
+<script>
+    $('#btnLoad').click(function () {
+        $('#demo').cycleText();
+    });
+
+    $('#btnResume').click(function () {
+        $('#demo').cycleText('resume');
+    });
+
+    $('#btnPause').click(function () {
+        $('#demo').cycleText('pause');
+    });
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
